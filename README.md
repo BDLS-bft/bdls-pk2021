@@ -64,8 +64,8 @@ echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> .profile
 source ~/.profile 
 go version
 go env
-git clone https://github.com/yonggewang/BFT-PROTOCOL-BDLS.git
-cd BFT-PROTOCOL-BDLS/
+git clone https://github.com/yonggewang/bdls.git
+cd bdls/
 git checkout master
 cd cmd/emucon/
 go build .
