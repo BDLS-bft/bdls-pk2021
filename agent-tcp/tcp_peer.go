@@ -1,8 +1,5 @@
 // BSD 3-Clause License
 //
-// Copyright (c) 2020, Sperax
-// All rights reserved.
-//
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
 //
@@ -44,9 +41,9 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/Sperax/bdls"
-	"github.com/Sperax/bdls/crypto/blake2b"
-	"github.com/Sperax/bdls/timer"
+	"github.com/yonggewang/bdls"
+	"github.com/yonggewang/bdls/crypto/blake2b"
+	"github.com/yonggewang/bdls/timer"
 	proto "github.com/gogo/protobuf/proto"
 )
 
