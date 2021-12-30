@@ -4,7 +4,7 @@
 
 ```
 $ git clone https://github.com/yonggewang/bdls
-$ cd bdls/emucon
+$ cd bdls/cmd/emucon
 $ go build .
 $ ./emucon
 NAME:
