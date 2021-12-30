@@ -46,6 +46,42 @@ the correctness of program implementation can be proven with proper test cases.
 
 For complete documentation, see the associated [Godoc](https://pkg.go.dev/github.com/Sperax/bdls).
 
+
+## How to test the code on Ubuntu Server 20.04
+
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt-get install autoconf automake libtool curl make g++ unzip
+cd /tmp
+wget https://go.dev/dl/go1.17.5.linux-amd64.tar.gz
+sudo tar -xvf go1.17.5.linux-amd64.tar.gz
+sudo mv go /usr/local
+cd
+echo 'export GOROOT=/usr/local/go' >> .profile
+echo 'export GOPATH=$HOME/go' >> .profile
+echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> .profile
+source ~/.profile 
+go version
+go env
+git clone https://github.com/yonggewang/BFT-PROTOCOL-BDLS.git
+cd BFT-PROTOCOL-BDLS/
+git checkout master
+cd cmd/emucon/
+go build .
+tmux
+tmux attach            [use ctrl+b d to switch]
+tmux list-session
+tmux attach -t 0
+./emucon help genkeys
+./emucon genkeys --count 4
+./emucon run --id 0 --listen ":4680"
+tmux
+./emucon run --id 1 --listen ":4681"
+tmux
+./emucon run --id 2 --listen ":4682"
+tmux
+./emucon run --id 3 --listen ":4683"
+
 ## Performance
 
 ```
