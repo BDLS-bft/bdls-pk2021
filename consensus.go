@@ -39,7 +39,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/Sperax/bdls/crypto/blake2b"
+	"github.com/yonggewang/BFT-PROTOCOL-BDLS/crypto/blake2b"
 	proto "github.com/gogo/protobuf/proto"
 )
 
