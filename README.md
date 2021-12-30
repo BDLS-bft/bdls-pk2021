@@ -49,6 +49,7 @@ For complete documentation, see the associated [Godoc](https://pkg.go.dev/github
 
 ## How to test the code on Ubuntu Server 20.04
 
+```
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get install autoconf automake libtool curl make g++ unzip
@@ -81,6 +82,7 @@ tmux
 ./emucon run --id 2 --listen ":4682"
 tmux
 ./emucon run --id 3 --listen ":4683"
+```
 
 ## Performance
 
