@@ -45,9 +45,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/Sperax/bdls"
-	"github.com/Sperax/bdls/agent-tcp"
-	"github.com/Sperax/bdls/crypto/blake2b"
+	"github.com/yonggewang/bdls"
+	"github.com/yonggewang/bdls/agent-tcp"
+	"github.com/yonggewang/bdls/crypto/blake2b"
 	"github.com/urfave/cli/v2"
 )
 
