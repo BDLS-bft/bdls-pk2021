@@ -3,7 +3,7 @@
 ## Install
 
 ```
-$ git clone https://github.com/Sperax/bdls
+$ git clone https://github.com/yonggewang/BFT-PROTOCOL-BDLS
 $ cd bdls/emucon
 $ go build .
 $ ./emucon
