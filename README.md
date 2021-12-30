@@ -47,7 +47,7 @@ the correctness of program implementation can be proven with proper test cases.
 For complete documentation, see the associated [Godoc](https://pkg.go.dev/github.com/Sperax/bdls).
 
 
-## How to test the code on Ubuntu Server 20.04
+## Install and test BDLS on Ubuntu Server 20.04 
 
 ```
 sudo apt-get update
