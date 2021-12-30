@@ -82,6 +82,12 @@ tmux
 ./emucon run --id 2 --listen ":4682"
 tmux
 ./emucon run --id 3 --listen ":4683"
+
+cd ../..
+go test -v -run config_test.go
+go test -v -run consensus_test.go
+go test -v -run ecdh_test.go 
+go test -v -run tcp_peer_test.go
 ```
 
 ## Performance
