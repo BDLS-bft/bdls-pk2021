@@ -1,8 +1,5 @@
 // BSD 3-Clause License
 //
-// Copyright (c) 2020, Sperax
-// All rights reserved.
-//
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are met:
 //
@@ -39,7 +36,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/yonggewang/BFT-PROTOCOL-BDLS/crypto/blake2b"
+	"github.com/yonggewang/bdls/crypto/blake2b"
 	proto "github.com/gogo/protobuf/proto"
 )
 
