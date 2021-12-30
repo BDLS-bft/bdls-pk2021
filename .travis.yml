@@ -6,7 +6,7 @@ before_install:
     - go get -t -v ./...
 
 install:
-    - go get github.com/Sperax/bdls/
+    - go get github.com/yonggewang/bdls/
 
 script:
     - go test -v -coverprofile=coverage.txt.tmp -covermode=atomic -timeout 12h -run "(Verify)|(Full20Participants)|(Propose)|(Round)|(Commit)|(Lock)|(Stage)"
