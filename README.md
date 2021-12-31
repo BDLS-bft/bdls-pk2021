@@ -47,7 +47,7 @@ the correctness of program implementation can be proven with proper test cases.
 For complete documentation, see the associated [Godoc](https://pkg.go.dev/github.com/Sperax/bdls).
 
 
-## Install and test BDLS on Ubuntu Server 20.04 
+## Install BDLS on Ubuntu Server 20.04 
 
 ```
 sudo apt-get update
@@ -89,6 +89,14 @@ go test -v -run consensus_test.go
 go test -v -run ecdh_test.go 
 go test -v -run tcp_peer_test.go
 ```
+## Regenerate go.mod and go.sum
+```
+rm go.mod
+rm go.sum
+go mod init github.com/yonggewang/bdls
+go mod tidy
+go mod vendor
+```
 
 ## Performance
 
@@ -112,4 +120,4 @@ See benchmark ourput at: [AMD-NORMAL.TXT](benchmarks/AMD-NORMAL.TXT) and [PI4-OV
 
 ## Status
 
-GA
+On-going
