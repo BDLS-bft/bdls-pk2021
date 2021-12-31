@@ -91,8 +91,7 @@ go test -v -run tcp_peer_test.go
 ```
 ## Regenerate go.mod and go.sum
 ```
-rm go.mod
-rm go.sum
+rm go.*
 go mod init github.com/yonggewang/bdls
 go mod tidy
 go mod vendor
