@@ -69,18 +69,15 @@ cd bdls/
 git checkout master
 cd cmd/emucon/
 go build .
-tmux
-tmux attach            [use ctrl+b d to switch]
-tmux list-session
-tmux attach -t 0
 ./emucon help genkeys
 ./emucon genkeys --count 4
-./emucon run --id 0 --listen ":4680"
-tmux
+
+[open four terminals to run four participants. if you log to remote Linux, you may use tmux commands. In tmux, you can switch termian using "ctrl+b d" and use "tmux attach -t 0" to enter the terminal. Use "tmux list-session" to check the current active terminals]
+
+
+./emucon run --id 0 --listen ":4680
 ./emucon run --id 1 --listen ":4681"
-tmux
 ./emucon run --id 2 --listen ":4682"
-tmux
 ./emucon run --id 3 --listen ":4683"
 
 cd ../..
