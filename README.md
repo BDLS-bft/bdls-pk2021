@@ -72,7 +72,10 @@ go build .
 ./emucon help genkeys
 ./emucon genkeys --count 4
 
-[open four terminals to run four participants. if you log to remote Linux, you may use tmux commands. In tmux, you can switch termian using "ctrl+b d" and use "tmux attach -t 0" to enter the terminal. Use "tmux list-session" to check the current active terminals]
+[open four terminals to run four participants. if you log to remote Linux, 
+you may use tmux commands. In tmux, you can switch termian using "ctrl+b d" 
+and use "tmux attach -t 0" to enter the terminal. Use "tmux list-session" 
+to check the current active terminals]
 
 
 ./emucon run --id 0 --listen ":4680
