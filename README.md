@@ -84,7 +84,7 @@ to check the current active terminals]
 ./emucon run --id 3 --listen ":4683"
 
 cd ../..
-$ go test -v -cpuprofile=cpu.out -memprofile=mem.out -timeout 2h
+go test -v -cpuprofile=cpu.out -memprofile=mem.out -timeout 2h
 ```
 ## Regenerate go.mod and go.sum
 ```
