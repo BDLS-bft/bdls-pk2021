@@ -84,10 +84,7 @@ to check the current active terminals]
 ./emucon run --id 3 --listen ":4683"
 
 cd ../..
-go test -v -run config_test.go
-go test -v -run consensus_test.go
-go test -v -run ecdh_test.go 
-go test -v -run tcp_peer_test.go
+$ go test -v -cpuprofile=cpu.out -memprofile=mem.out -timeout 2h
 ```
 ## Regenerate go.mod and go.sum
 ```
@@ -95,14 +92,6 @@ rm go.*
 go mod init github.com/yonggewang/bdls
 go mod tidy
 go mod vendor
-```
-
-## Performance
-
-```
-COMMANDS:
-$ go test -v -cpuprofile=cpu.out -memprofile=mem.out -timeout 2h
-
 ```
 
 See benchmark ourput at: [AMD-NORMAL.TXT](benchmarks/AMD-NORMAL.TXT) and [PI4-OVERLOAD.TXT](benchmarks/PI4-OVERLOAD.TXT)
