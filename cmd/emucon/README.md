@@ -9,7 +9,7 @@ $ go build .
 $ ./emucon
 NAME:
    BDLS consensus protocol emulator - Generate quorum then emulate participants
-
+ 
 USAGE:
    emucon [global options] command [command options] [arguments...]
 
